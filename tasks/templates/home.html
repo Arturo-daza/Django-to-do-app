@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>    Home     </h1>
-<p> {% lorem 3 p random %} </p>
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-1 text-center">To do app</h1>
+        {% lorem 3 p random %}
+        <div class="text-center">
+            <a class="btn btn-secondary" href="/signin/">
+                Signin
+            </a>
+            <a class="btn btn-dark"  href="/signup/">
+                Register
+            </a>
+        </div>
+    </section>
+</main>
 {% endblock content %}
