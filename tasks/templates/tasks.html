@@ -13,7 +13,9 @@
             {{ task.title }}
             {% endif %}
         </a>
+        <p>{{task.description}}</p>
         <p>Created: {{task.created}}</p>
+        <p>{{ task.datecompleted|date:'M J Y:i' }}</p>
     </li>
     {% endfor %}
 </ul>
